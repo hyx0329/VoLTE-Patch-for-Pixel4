@@ -1,6 +1,6 @@
 id=volte4pixel4
 name=VoLTE Patch for Pixel 4/4XL
-version=v0.1.0
+version=v0.1.1
 versionCode=100
 author=hyx0329
 description=Replace stock MBN with Mi9T's to enable VoLTE. Tested on Pixel 4XL with LOS18.1 installed.
