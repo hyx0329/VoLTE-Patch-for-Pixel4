@@ -15,5 +15,7 @@ FILES_TO_REMOVE="
 
 for i in $FILES_TO_REMOVE; do
     ui_print "- Try to remove file: $i"
-    [ -e $i ] && rm -rf $i && ui_print "- Success" || ui_print "- Failed"
+    [ -e "$i" ] && "- File exists" || "- File do not exist"
+    rm "$i" && ui_print "- Remove success" || ui_print "- Remove failed"
+    [ -e "$i" ] && "- File still exists! Error!" && abort "- Cannot remove file(s)"
 done
